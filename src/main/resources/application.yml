@@ -1,0 +1,21 @@
+spring:
+  application:
+     name: MoneyMatrix
+
+
+  datasource:
+    url: ${DB_URL}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    generate-ddl: true
+
+secret: ${JWT_SECRET}
+expiry: 85400000
+
